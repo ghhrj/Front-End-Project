@@ -1,4 +1,4 @@
-:root {
+ :root {
     --MainColor: #10cab7;
     --secondary-color: #2c4755;
     --section-padding: 60px;
@@ -455,6 +455,14 @@ header .links ul li:not(:last-child) a {
     color: var(--MainColor);
     transition: var(--main-duration);
 }
+@media (max-width:767px) {
+    .contact .info .label {
+        font-size: 20px;
+    }
+    .contact .info .link {
+        font-size: 15px;
+    }
+}
 .contact .info .link:hover {
     color: var(--secondary-color);
 }
@@ -471,12 +479,6 @@ header .links ul li:not(:last-child) a {
 }
 .contact .info .social i:hover {
     color: var(--MainColor);
-}
-@media (max-width:767px) {
-    .contact .info .label,
-    .contact .info .link {
-        font-size: 25px;
-    }
 }
 /* End Contact */
 /* Start Footer */
